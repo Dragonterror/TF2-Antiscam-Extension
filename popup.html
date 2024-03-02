@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Blocker</title>
+    <style>
+        body {
+            width: 300px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Blocker</h1>
+    <p>Extension is active.</p>
+
+    <h2>Allowed Sites:</h2>
+    <ul id="allowedSitesList"></ul>
+
+    <form id="allowForm">
+        <label for="allowUrl">Allow Site:</label>
+        <input type="text" id="allowUrl" name="allowUrl" placeholder="Enter URL">
+        <button type="submit">Allow</button>
+    </form>
+    <p id="message"></p>
+
+    <script src="popup.js"></script>
+</body>
+</html>
